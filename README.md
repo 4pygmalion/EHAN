@@ -9,10 +9,12 @@ from model import EHAN
 
 
 ## Build model
-config = {'n_features':vars_,
-          'n_auxs':9,
-          'steps':16,
-          'hidden_units': 20
+config = {'k':10, # timestamp
+          'c_m':100, # vocasize
+          'm':4, # output vector size
+          'n_d': 13
+          'n_v': 13
+          'n_h': 100 # unit of dense laye
           }
 
 mode = EHAN(config)
