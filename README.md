@@ -4,6 +4,8 @@ Interpretable Prediction of Vascular Diseases from Electronic Health Records via
 ```python3
 import tensorflow as tf
 from model import EHAN
+
+
 ## Build model
 config = {'n_features':vars_,
           'n_auxs':9,
@@ -13,10 +15,6 @@ config = {'n_features':vars_,
 
 mode = EHAN(config)
 
-#### 
-history = retain.fit(x=[x_d, x_m], 
-                     y=y
-                     )
 ```
 
 
