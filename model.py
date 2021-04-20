@@ -37,6 +37,7 @@ def build_EHAN(config):
     c_d = tf.keras.layers.Flatten()(c_d)
     
     
+    # Medication part
     x_m = tf.keras.layers.Input((k, c_m))
     v_m = tf.keras.layers.Lambda(lambda x: x / tf.norm(x, axis=0), name='norm')(x_m)
     v_m = tf.keras.layers.TimeDistributed(tf.keras.layers.Dense(m, use_bias=False), name='soft_embedding')(v_m)
