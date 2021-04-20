@@ -1,6 +1,23 @@
 # EHAN
 Interpretable Prediction of Vascular Diseases from Electronic Health Records via Deep Attention Networks published 2018 IEEE 18th International Conference on Bioinformatics and Bioengineering.
 
+```python3
+import tensorflow as tf
+from model import EHAN
+## Build model
+config = {'n_features':vars_,
+          'n_auxs':9,
+          'steps':16,
+          'hidden_units': 20
+          }
+
+mode = EHAN(config)
+
+#### 
+history = retain.fit(x=[x_d, x_m], 
+                     y=y
+                     )
+```
 
 
 Interpretable Prediction of Vascular Diseases from Electronic Health Records via
