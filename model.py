@@ -75,5 +75,3 @@ class EHAN(object):
         model = tf.keras.models.Model([x_d, x_m], y)
 
         return model
-
-    return model
