@@ -17,7 +17,9 @@ def build_EHAN(config):
 
     Returns
     -------
-
+    tf.keras.models.Sequntial
+    
+    
     '''
     x = tf.keras.layers.Input((k, c))
     v = tf.keras.layers.Lambda(lambda x: x / tf.norm(x, axis=0), name='norm')(x)
