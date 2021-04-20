@@ -9,15 +9,10 @@ from model import EHAN
 
 
 ## Build model
-config = {'k':10, # timestamp
-          'c_m':100, # vocasize
-          'm':4, # output vector size
-          'n_d': 13
-          'n_v': 13
-          'n_h': 100 # unit of dense laye
-          }
+config = {'k':60, 'c_d':3000, 'c_m':500, 'm':300, 'n_d':128, 'n_h':128}
 
-model = EHAN(config)
+ehan = EHAN(config)
+model = ehan.build_model()
 
 ```
 
