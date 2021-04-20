@@ -17,6 +17,14 @@ mode = EHAN(config)
 
 ```
 
+#### interpretation
+```python3
+from interpretation import GradCAM
+
+gcam = GradCAM(model)
+gcam.generated_grad_cam(xs[0:1])
+
+```
 
 Interpretable Prediction of Vascular Diseases from Electronic Health Records via
 Deep Attention Networks
