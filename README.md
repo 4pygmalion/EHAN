@@ -17,7 +17,7 @@ config = {'k':10, # timestamp
           'n_h': 100 # unit of dense laye
           }
 
-mode = EHAN(config)
+model = EHAN(config)
 
 ```
 
