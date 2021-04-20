@@ -22,6 +22,8 @@ def build_EHAN(config):
     
     
     '''
+    # Diagnosis part
+    
     x = tf.keras.layers.Input((k, c_m))
     v = tf.keras.layers.Lambda(lambda x: x / tf.norm(x, axis=0), name='norm')(x)
     v = tf.keras.layers.TimeDistributed(tf.keras.layers.Dense(m, use_bias=False), name='soft_embedding')(v)
@@ -52,6 +54,6 @@ def build_EHAN(config):
     o = tf.keras.layers.Dense(n_h)(c_tilde)
     y = tf.keras.layers.Dense(2, activation='softmax')(o)
     
-    model = tf.keras.models.Model(x, y)
+    model = tf.keras.models.Model([x, m_d], y)
 
     return model
