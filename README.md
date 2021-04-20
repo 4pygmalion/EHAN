@@ -1,4 +1,4 @@
-### EHAN
+#### EHAN (EHR History-based prediction using Attention Network)
 Interpretable Prediction of Vascular Diseases from Electronic Health Records via Deep Attention Networks published 2018 IEEE 18th International Conference on Bioinformatics and Bioengineering.
 
 This code was implemnted with tensorflow 2.x which is enable eager execution
