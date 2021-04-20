@@ -31,6 +31,10 @@ gcam.generated_grad_cam(xs[0:1])
 ```
 
 
+#### What is the difference between RETAIN and EHAN?
+![image](https://user-images.githubusercontent.com/45510932/115355111-50d30c00-a1f5-11eb-9084-0aacb477dbe7.png)
+
+
 #### Original article:
 Interpretable Prediction of Vascular Diseases from Electronic Health Records via
 Deep Attention Networks
